@@ -54,6 +54,7 @@ void	ft_splitta(const char *s, char c, char **split, size_t n)
 			{
 				tok = (char *)ft_calloc((len + 1), sizeof(char));
 				ft_memcpy(tok, s + i - len, len);
+				tok[len] = '\0';
 				split[j] = tok;
 				j++;
 			}
